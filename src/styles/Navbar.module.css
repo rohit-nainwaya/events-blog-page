@@ -1,0 +1,21 @@
+.navbar {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc80;
+  }
+  
+  .navLinks .nav-link {
+    color: #ffcc80; /* Lighter color for nav links */
+    font-weight: 500;
+  }
+  
+  .navLinks .nav-link:hover {
+    color: #ff5722;
+  }  
