@@ -1,28 +1,28 @@
 // src/app/page.js
-import Link from 'next/link'; 
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function HomePage() {
   // Array of giveaway links with labels
   const giveawayLinks = [
-    { label: 'Get Color', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Get Foodie', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Get Disco', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Get Dosti', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Get Trendy', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Get Twinkle', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Special Offer', url: 'YOUR_SPECIAL_LINK_HERE' }, // Add more links here
+    { label: 'Get Color', url: 'https://gpay.app.goo.gl/ALs8rs' },
+    { label: 'Get Foodie', url: 'https://gpay.app.goo.gl/ALs8rs' },
+    { label: 'Get Disco', url: 'https://gpay.app.goo.gl/ALs8rs' },
+    { label: 'Get Dosti', url: 'https://gpay.app.goo.gl/ALs8rs' },
+    { label: 'Get Trendy', url: 'https://gpay.app.goo.gl/ALs8rs' },
+    { label: 'Get Twinkle', url: 'https://gpay.app.goo.gl/ALs8rs' },
+    { label: 'Special Offer', url: 'https://g.co/payinvite/b4f36m' },
   ];
 
   // Array of gift links with labels
   const giftLinks = [
-    { label: 'Gift Color', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Gift Foodie', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Gift Disco', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Gift Dosti', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Gift Trendy', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Gift Twinkle', url: 'YOUR_GPAY_LINK_HERE' },
-    { label: 'Special Offer', url: 'YOUR_SPECIAL_LINK_HERE' }, // Add more links here
+    { label: 'Gift Color', url: 'https://gpay.app.goo.gl/m1yzYX' },
+    { label: 'Gift Foodie', url: 'https://gpay.app.goo.gl/xFr5nW' },
+    { label: 'Gift Disco', url: 'https://gpay.app.goo.gl/TBFpWW' },
+    { label: 'Gift Dosti', url: 'https://gpay.app.goo.gl/eSKDtJ' },
+    { label: 'Gift Trendy', url: 'https://gpay.app.goo.gl/phkHxf' },
+    { label: 'Gift Twinkle', url: 'https://gpay.app.goo.gl/dgbwpq' },
+    { label: 'Special Offer', url: 'https://g.co/payinvite/b4f36m' },
   ];
 
   return (
@@ -65,14 +65,14 @@ export default function HomePage() {
         <p className={styles.text}>
           Share extra ladoos with friends to help them win rewards!
         </p>
-        <div className={`${styles.ladduLinks} d-flex flex-wrap justify-content-center`}>
+        <div className={styles.laddooClaimLinks}>
           {giftLinks.map((link, index) => (
             <a
               key={index}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${styles.ladduLink} btn btn-warning mx-2`}
+              className={styles.ladduLink}
             >
               {link.label}
             </a>
@@ -89,6 +89,7 @@ export default function HomePage() {
 
       {/* Google AdSense placeholder */}
       <div className={styles.adContainer}>
+        {/* Replace this paragraph with your AdSense code */}
         <p>Ad space for Google AdSense</p>
       </div>
 
